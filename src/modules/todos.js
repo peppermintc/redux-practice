@@ -33,6 +33,6 @@ export default function todos(state = initialState, action) {
                 todo.id === action.id ? {...todo, done: !todo.done} : todo
             );
         default:
-            state;
+            return state;
     }
 }
